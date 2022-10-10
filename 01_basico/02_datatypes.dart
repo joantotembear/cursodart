@@ -66,9 +66,15 @@ main() {
     'edad': 45
   };
 
-  Map<String, dynamic> capitan = new Map();
+  var capitan = new Map<String, dynamic>();
   capitan.addAll({'nombre': 'Steve', 'poder': 'Soportar suero sin morir'});
 
-  //print(ironman);
+  //print(ironman['edad']);
   //print(capitan);
+
+  Map<String, dynamic> capitan2 = new Map();
+  capitan.addAll(
+      {'nombre': 'Steve', 'poder': 'Soportar suero sin morir', 'edad': 100});
+
+  //print(capitan2);
 }
